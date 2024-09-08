@@ -1,7 +1,7 @@
 System design is a process of designing your system that best suits your product needs according to your user base it primarily consists of three fundamental components Client Server and Data store.
 Lets take an example of Facebook, what is their high level design?
 
-![[../Images/Components of System.png]]
+![](../Images/Components-of-System.png)
 
 These three components are the fundamentals of a system. 
 The primary goal of a system is to serve data to the client in a way that the client can understand. For a system like Facebook we there are billion of users for that reason the system should be fast, scalable, available and consistent.
