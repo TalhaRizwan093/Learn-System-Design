@@ -7,18 +7,21 @@ In databases commit is defines that the write in database is complete and done.
 ### Dirty Write
 Lets take an example of two people purchasing some thing
 
-![[../Images/Fig dirty write.png]]
+![](../Images/Fig-dirty-write.png)
+
 In the above example thread 1 and thread 2 was changing the same row so we in the end have the inconstant data. Product is purchased for the user2 and the address of user 1 is given. 
 #### Fix Row level lock
 We can use locking to prevent this issue
-![[../Images/Fig locking explained.png]]
+
+![](../Images/Fig-locking-explained.png)
+
 - In this case dead lock could occur if the share resources between and they want to access each other while in lock. but there are prevention techniques for this in databases like dead lock detection where they then give up there detection.
 - Another solution in if we add data in row order it wont occur either in some cases.
 This will fix the m of dirty writes but this isn't it we have
 
 ### Dirty Reads
 Dirty read is actually reading uncommitted data for example in the below figure. We have Purchased some thing and now our balance is 10$ less and the now we read our balance and it is 10$ less but due to some reason the receiver didn't received the balance and you read the incorrect data
-![[../Images/Fig dirty read.png]]
+![](../Images/Fig-dirty-read.png)
 ### Fix
 We can do couple of fixes  
 1. Row level locking
