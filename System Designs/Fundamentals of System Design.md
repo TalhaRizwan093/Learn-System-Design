@@ -11,7 +11,7 @@ As discussed our primary goal is to handle data.
 
 Lets first discuss storage types, we have Hard drive and RAM. RAM is a lot faster then the Hard Drive but is volatile means is the system shut downs the data will be gone for forever. But the hard drive is non volatile means it can persist data even if the system shut downs.
 
-![[../Images/HDD and Ram.png]]
+![](../Images/HDD-and-Ram.png)
 
 **Question:** Where should the Facebook store data?
 For a large user base we speed is very essential so should we store data in RAM? But we also said that the availability is also very important users don't want to post their information and then after some time its get deleted, Right? 
