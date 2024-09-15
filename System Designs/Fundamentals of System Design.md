@@ -27,7 +27,7 @@ We can conclude that the systems like Facebook should use both. But How we will 
 #### App Server:
 
 App server is also a very important part of a system, it consists of the the business logic of a system, and billion user connects with it and we somehow should manage it. For that we replicate the server so that different user could connect and use the system.**
-
+![](Pasted image 20240915121446.png)
 #### Conclusion:
 
 System Design is the process of designing a system such that the system is faster (read/write), reliable (fault tolerant, backups etc.), Consistent (Same information to all users), Available (The data should be available to all the clients).**
