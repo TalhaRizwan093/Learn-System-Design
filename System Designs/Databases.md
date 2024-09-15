@@ -12,22 +12,22 @@ Hard drive stores data on metal disks and is divided into parts which can be acc
 Data on hard drive could be at different addresses so while reading it the pointer needs to move frequently to get the desired information which could be expensive.
 - So we need our data to be closer so that our pointer does find the desired data fast. e.g. storing data in array.
 
-![[sequential-nonsequential-data.png]]
+![[../Images/sequential-nonsequential-data.png]]
 
 Now the next part is finding data? Lets take an example where we have people and their ages
 
-![[Data-person-age.png]]
+![[../Images/Data-person-age.png]]
 
 If we want to find the age of person 3 we actually don't know the address of the data where it resides but rather it will go over all the rows and find the desired data.
 
-![[Read-operation-data.png]]
+![[../Images/Read-operation-data.png]]
 
 And in case we want to write the data on some row we still have to find that row and change the data making the time complexity of it equals to O(n) also.
 
 **Side Note Making Write Faster**
 If we store new data every time we want to write like appending new data it will give us O(1) write speed but we are compromising or storage and the read speed. Explained in below figure.
 
-![[Write-Fast-Figure.png]]
+![[../Images/Write-Fast-Figure.png]]
 
 This is where we need indexes. We will be diving deep into Indexes in next learning.
 Will discuss the following Indexes:
