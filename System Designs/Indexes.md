@@ -4,13 +4,13 @@ Indexes are just a better way of reading/finding rows with specific value. They 
 ## Hash Indexes:
 Hash index is based on hash map and we know that in hash maps we have a function which is basically hidden from user but has the following functionality.
 
-![../Images/Hash-function.png](Hash-function.png)
+![](../Images/Hash-function.png)
 
 In the above figure we can note that if we hash some value we get same result for that particular value. But it could be same for more then one values also which is some thing we will then need to loop over and find our desired thing.
 
 Now the hash value could be the index of the array and whenever we want to find the row. We just use the hash function and get to know the location and access it. Making the read complexity equals to O(1)
 
-![hash-and-array.png](hash-and-array.png)
+![](../Images/hash-and-array.png)
 
 Now for the issue when 2 or more values may get the same index value for that we can do the following:
 - **Chaining:** We can store a linked list at that index and if more values with same hash comes we can eventually grow our linked list.
@@ -28,7 +28,7 @@ Interesting fact about B-Tree is it always remain balanced (All left and right n
 
 Lets visualize it and have better understanding:
 
-![B-tree-visualized.png](B-tree-visualized.png)
+![](../Images/B-tree-visualized.png)
 \
 **Limitation** We have every node a set and it have a fixed size approx. 8kb
 **Time Complexity:** We are traversing tree which is balanced so we know that it has a time complexity of O(log n)
@@ -52,7 +52,7 @@ LSM Tree index is made in memory  so we have some speed going on already. All th
 
 LSM Tree Visualized:
 
-![LSM-tree.png](LSM-tree.png)
+![](../Images/LSM-tree.png)
 
 LSM tree it self is not durable as it is in memory. But we have a fix for it that we had for hash index the WAL(write ahead log).
 
@@ -66,7 +66,7 @@ It basically works like the following:
 SS tables are on disk, sorted and are immutable. and converting the LSM tree on to the SS table is not expensive either BST in order traversal can do it in O(n).
 
 Lets Visualize it a little:
-![LSM-SStable.png](LSM-SStable.png)
+![](../Images/LSM-SStable.png)
 
 **Reads:** Reads are like in a order from LSM tree to the Nth SS table if not found in between. But as we said the tables are immutable then they could have duplicate data. So we read and consider the most recent entry of that data.
 
