@@ -8,6 +8,7 @@ Following are the links to the content of the system design concepts
 
 - Fundamentals of System Design [(Link)](https://github.com/TalhaRizwan093/Learn-System-Design/blob/master/System%20Designs/Fundamentals%20of%20System%20Design.md "Fundamentals of System designsystem single responsibiltiy")
 - Databases [(Link)](https://github.com/TalhaRizwan093/Learn-System-Design/blob/master/System%20Designs/Databases.md)
+- Indexes [(Link)](https://github.com/TalhaRizwan093/Learn-System-Design/blob/master/System%20Designs/Indexes.md)
 
 ## Contributions
 
